@@ -11,23 +11,23 @@
 </head>
 
 <body>
-  <header>
-    <nav class="nav-bar">
-      <a class="nav-button" href="#skills">Skills</a>
-      <a class="nav-button" href="#cert">Certifications</a>
-      <a class="nav-button" href="#contact">Contact Me</a>
+  <header class="header">
+    <nav class="header__nav">
+      <a class="header__button" href="#skills">Skills</a>
+      <a class="header__button" href="#certs">Certifications</a>
+      <a class="header__button" href="#contacts">Contact Me</a>
     </nav>
-    <h1>I'm Harith.</h1>
-    <h2>a <span class="pro">pro</span>grammer</h2>
-    <img src="images/mountain.png" alt="mountain-img">
+    <h1 class="header__primary">I'm Harith.</h1>
+    <h2 class="header__secondary">a <span class="header__pro">pro</span>grammer</h2>
+    <img class="header__img" src="images/mountain.png" alt="mountain-img">
   </header>
   <main>
-    <section>
-      <img src="images/programmer.png" alt="">
-      <h2>Hello.</h2>
-      <p>I'm a Web Developer. I study at ITMO University. I love 🍔 and coding.</p>
+    <section class="mainSection">
+      <img class="mainSection__img" src="images/programmer.png" alt="">
+      <h2 class="mainSection__primary">Hello.</h2>
+      <p class="mainSection__text">I'm a Web Developer. I study at ITMO University. I love 🍔 and coding.</p>
     </section>
-    <aside>
+    <!-- <aside>
       <pre>
 This is a computer if you didn't notice)
 .--.
@@ -37,30 +37,34 @@ This is a computer if you didn't notice)
 |  | |'-----'|
 |__|~')_____('
   </pre>
-    </aside>
-    <section>
-      <h2 id=skills>My Skills</h2>
-      <ul>
-        <li>Programming</li>
-        <li>Web Development</li>
-        <li>Programming</li>
+    </aside> -->
+    <section class="skills" id="skills">
+      <h2 class="skills__primary">My Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__li">Programming</li>
+        <li class="skills__li">Web Development</li>
+        <li class="skills__li">Programming</li>
       </ul>
     </section>
-    <section>
-      <h2 id=cert>Certifications</h2>
-      <ul>
-        <li>Comptia A+</li>
-        <li>Cisco CCNA</li>
+    <section class="certs" id="certs">
+      <h2 class="certs__primary">Certifications</h2>
+      <ul class="certs__list">
+        <li class="certs__li">Comptia A+</li>
+        <li class="certs__li">Cisco CCNA</li>
       </ul>
     </section>
-    <section>
-      <h2>My Motto</h2>
-      <p>As <cite>Martin Fowler</cite> once said — <q>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</q></p>
+    <section class="motto">
+      <h2 class="motto__primary">My Motto</h2>
+      <p class="motto__text">As <cite class="motto__cite">Martin Fowler</cite> once said — <q class="motto__quote">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</q></p>
     </section>
   </main>
-  <footer>
-    <h2 id=contact>Contact Me</h2>
-    <pre>
+  <footer class="footer" id="contacts">
+    <h2 class="footer__primary">Contact Me</h2>
+<nav class="footer__nav">
+  <a class="footer__button" href="https://www.facebook.com/harith.h.mohammad/" target="_blank" rel="noopener noreferrer">facebook</a>
+  <a class="footer__button" href="https://vk.com/hhm91" target="_blank" rel="noopener noreferrer">VKontakte</a>
+</nav>
+    <!-- <pre>
       <code>
 function letsConnect(yes) {
   if (yes === true) {
@@ -71,8 +75,8 @@ function letsConnect(yes) {
   }
 }
       </code>
-    </pre>
-    <b>© 2021 Harith Al-Dabbagh.</b>
+    </pre> -->
+    <b class="footer__copyright">© 2021 Harith Al-Dabbagh.</b>
   </footer>
 </body>
 

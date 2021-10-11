@@ -4,57 +4,121 @@ body {
   font-family: 'Merriweather', serif;
 }
 
-h1 {
+/* HEADER PART */
+
+.header {
+  background-color: #EAF6F6;
+}
+
+
+.header__nav {
+  background-color: #66BFBF;
+  padding: 1rem;
+  margin: 0;
+}
+
+.header__button {
+  text-decoration: none;
+  color: #EAF6F6;
+  padding: 0 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem
+}
+
+.header__button:hover {
+  color: rgb(255, 204, 128);
+}
+
+.header__primary {
   color: #66BFBF;
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
   font-family: 'Sacramento', cursive;
 }
 
-h2 {
+.header__secondary {
   color: #66BFBF;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
 }
 
-header {
-  background-color: #EAF6F6;
+.header__pro {
+  text-decoration: underline;
 }
 
-p {
-  font-size: 1rem;
+.header__pro:hover {
+  color: rgb(255, 204, 128);
 }
 
-ul {
+/* MAIN PART */
+
+.mainSection__primary {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+.skills__primary {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+.skills__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li {
+.skills__li {
   line-height: 1.6rem;
 }
 
-footer {
+.certs__primary {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+.certs__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.certs__li {
+  line-height: 1.6rem;
+}
+
+.motto__primary {
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+}
+
+.footer {
   background-color: #66BFBF;
   padding-bottom: 20px;
 }
 
-.nav-bar {
-  background-color: #66BFBF;
+.footer__primary{
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.footer__nav {
   padding: 1rem;
   margin: 0;
 }
 
-.nav-button {
+.footer__button {
+  text-decoration: none;
+  color: #EAF6F6;
   padding: 0 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem
 }
 
-.pro {
-  text-decoration: underline;
-}
-
-#contact {
-  color: #FFFFFF;
-  margin: 0;
+.footer__button:hover {
+  color: rgb(255, 204, 128);
 }
