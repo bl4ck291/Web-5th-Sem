@@ -1,3 +1,9 @@
+:root {
+  --cyan: #66BFBF;
+  --milky-white: #EAF6F6;
+  --pumpkin-orange: #ffcc80;
+}
+
 body {
   text-align: center;
   margin: 0;
@@ -5,39 +11,37 @@ body {
 }
 
 /* HEADER PART */
-
 .header {
-  background-color: #EAF6F6;
+  background-color: var(--milky-white);
 }
 
-
 .header__nav {
-  background-color: #66BFBF;
+  background-color: var(--cyan);
   padding: 1rem;
   margin: 0;
 }
 
 .header__button {
   text-decoration: none;
-  color: #EAF6F6;
+  color: var(--milky-white);
   padding: 0 4rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem
 }
 
 .header__button:hover {
-  color: rgb(255, 204, 128);
+  color: var(--pumpkin-orange);
 }
 
 .header__primary {
-  color: #66BFBF;
+  color: var(--cyan);
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
   font-family: 'Sacramento', cursive;
 }
 
 .header__secondary {
-  color: #66BFBF;
+  color: var(--cyan);
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
 }
@@ -47,19 +51,18 @@ body {
 }
 
 .header__pro:hover {
-  color: rgb(255, 204, 128);
+  color: var(--pumpkin-orange);
 }
 
 /* MAIN PART */
-
 .mainSection__primary {
-  color: #66BFBF;
+  color: var(--cyan);
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
 }
 
 .skills__primary {
-  color: #66BFBF;
+  color: var(--cyan);
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
 }
@@ -75,7 +78,7 @@ body {
 }
 
 .certs__primary {
-  color: #66BFBF;
+  color: var(--cyan);
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
 }
@@ -91,18 +94,19 @@ body {
 }
 
 .motto__primary {
-  color: #66BFBF;
+  color: var(--cyan);
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
 }
 
+/* FOOTER PART */
 .footer {
-  background-color: #66BFBF;
+  background-color: var(--cyan);
   padding-bottom: 20px;
 }
 
-.footer__primary{
-  color: #FFFFFF;
+.footer__primary {
+  color: var(--milky-white);
   margin: 0;
 }
 
@@ -113,12 +117,12 @@ body {
 
 .footer__button {
   text-decoration: none;
-  color: #EAF6F6;
+  color: var(--milky-white);
   padding: 0 4rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem
 }
 
 .footer__button:hover {
-  color: rgb(255, 204, 128);
+  color: var(--pumpkin-orange);
 }
