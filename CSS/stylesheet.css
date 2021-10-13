@@ -119,7 +119,8 @@ main {
 }
 
 .motto__quote {
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.08rem;
+  font-style: italic;
 }
 
 /* FOOTER PART */
