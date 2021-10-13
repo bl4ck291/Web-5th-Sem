@@ -32,6 +32,7 @@ body {
 
 .header__button:hover {
   color: var(--pumpkin-orange);
+  text-shadow: 0 0 0.2rem var(--pumpkin-orange);
 }
 
 .header__primary {
@@ -55,6 +56,7 @@ body {
 
 .header__pro:hover {
   color: var(--pumpkin-orange);
+  text-shadow: 0 0 0.2rem var(--pumpkin-orange);
 }
 
 .header__img {
@@ -150,4 +152,5 @@ main {
 
 .footer__button:hover {
   color: var(--pumpkin-orange);
+  text-shadow: 0 0 0.1rem var(--pumpkin-orange);
 }
