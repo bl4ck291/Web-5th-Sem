@@ -68,6 +68,12 @@ main {
   padding: 0 11rem;
 }
 
+.mainSection__img{
+  width: 30%;
+  height: auto;
+  padding-left: 1%;
+}
+
 .mainSection__primary {
   color: var(--cyan);
   font-family: 'Montserrat', sans-serif;
