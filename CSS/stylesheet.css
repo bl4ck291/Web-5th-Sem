@@ -3,12 +3,13 @@
   --pumpkin-orange: #ffcc80;
   --top-gradient: linear-gradient(to bottom, var(--cyan) 30%, white);
   --bottom-gradient: linear-gradient(to top, var(--cyan), white 90%);
+  --top-gradient-collapse: linear-gradient(to bottom, var(--cyan) 80%, white)
 }
 
 body {
   text-align: center;
-  margin: 0;
   font-family: 'Merriweather', serif;
+  margin: 0;
 }
 
 /* HEADER PART */
@@ -17,9 +18,18 @@ body {
 }
 
 .header__nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: var(--cyan);
+  box-shadow: 0 0 1rem var(--cyan);
   padding: 1rem;
   margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
 .header__button {
@@ -41,6 +51,7 @@ body {
   margin: 50px auto 0 auto;
   font-family: 'Sacramento', cursive;
   text-shadow: 0 0 0.2rem white;
+  padding-top: 3rem;
 }
 
 .header__secondary {
@@ -60,19 +71,30 @@ body {
 }
 
 .header__img {
-  filter: drop-shadow(0 0 0.5rem white);
+  position: sticky;
+  z-index: 2;
+  filter: drop-shadow(0 0 0.5rem white);.
+}
+
+.header__img2 {
+  position: absolute;
+  z-index: 1;
+  top: 25rem;
+  left: 25rem;
 }
 
 /* MAIN PART */
 main {
   padding: 0 11rem;
+  margin: 0;
 }
 
-.mainSection__img{
-  width: 30%;
-  height: auto;
+.mainSection__img {
+  width: 350px;
   padding-left: 1%;
+  padding-top: 2rem;
 }
+
 
 .mainSection__primary {
   color: var(--cyan);
@@ -84,6 +106,14 @@ main {
   color: var(--cyan);
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
+}
+
+.mainSection__flexContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .skills__list {
@@ -144,6 +174,9 @@ main {
 }
 
 .footer__nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 1rem;
   margin: 0;
 }
@@ -159,4 +192,32 @@ main {
 .footer__button:hover {
   color: var(--pumpkin-orange);
   text-shadow: 0 0 0.1rem var(--pumpkin-orange);
+}
+
+@media screen and (max-width: 683px) {
+  .header {
+    padding: 2.5rem;
+  }
+
+  .header__primary {
+    font-size: 5rem;
+  }
+
+  .header__img {
+    width: 100%;
+  }
+  .header__img2 {
+    display: none;
+  }
+    main {
+      padding: 0 3rem;
+    }
+
+  .mainSection__img {
+    width: 60%;
+    padding-left: 1%;
+    padding-top: 0;
+
+  }
+
 }
