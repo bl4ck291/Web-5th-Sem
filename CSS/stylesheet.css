@@ -213,7 +213,7 @@ main {
 
 .table__row {
   display: grid;
-  grid-template-columns: 60px repeat(7, minmax(120px, 220px));
+  grid-template-columns: 60px repeat(7, minmax(100px, 1fr));
 }
 
 .table__row:nth-of-type(odd) {
@@ -235,7 +235,7 @@ main {
 
 /* Responsive Part */
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1920px) {
   .table {
     overflow: scroll;
     overflow-y: hidden;
@@ -263,8 +263,7 @@ main {
   }
 
   .header__img2 {
-    top: 60%;
-    left: 10%;
+    display: none;
   }
 
   main {
