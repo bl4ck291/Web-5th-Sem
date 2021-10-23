@@ -202,7 +202,9 @@ main {
   display: grid;
   font-weight: 400;
   margin: 3%;
-  box-shadow: 0 0 0.5rem var(--cyan);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .table__header {
@@ -220,7 +222,6 @@ main {
   background: #ededed;
 }
 
-
 .table__cell {
   display: flex;
   justify-content: center;
@@ -232,16 +233,13 @@ main {
   box-shadow: 0 0 0.5rem var(--cyan);
 }
 
-
 /* Responsive Part */
-
 @media screen and (max-width: 1920px) {
   .table {
     overflow: scroll;
     overflow-y: hidden;
   }
 }
-
 
 @media screen and (max-width: 850px) {
   .table {
