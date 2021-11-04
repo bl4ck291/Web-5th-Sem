@@ -1,4 +1,4 @@
-window.addEventListener("load", function(event) {
+window.addEventListener("DOMContentLoaded", function(event) {
   var url = document.location.pathname.split("/");
   var navLinks = document.getElementsByClassName("header__button");
   var currentPage = url[url.length - 1];
