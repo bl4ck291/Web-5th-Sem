@@ -48,6 +48,12 @@ body {
   text-shadow: 0 0 0.2rem var(--pumpkin-orange);
 }
 
+.header__button__active {
+  color: var(--pumpkin-orange);
+  text-shadow: 0 0 0.2rem var(--pumpkin-orange);
+  text-decoration: overline;
+}
+
 .header__primary {
   color: white;
   font-size: 5.625rem;
@@ -205,6 +211,8 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
   overflow: hidden;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
 }
 
 .table__header {
