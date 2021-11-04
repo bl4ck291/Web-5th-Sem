@@ -253,6 +253,12 @@ main {
   .table {
     font-size: 50%;
   }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 683px) {
