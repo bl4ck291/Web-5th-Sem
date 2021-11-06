@@ -9,7 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@600&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/stylesheet.css">
+  <script src="scripts/loadtime.js"></script>
   <script src="scripts/activetab.js"></script>
+  <script src="scripts/localstorage.js" type="module"></script>
+  <script src="scripts/todolist.js" type="module"></script>
 </head>
 
 <body>
@@ -22,38 +25,29 @@
       <a class="header__button" id="Schedule" href="schedule.html">Schedule</a>
       <a class="header__button" id="Todo" href="todolist.html">ToDo List</a>
     </nav>
-    <h1 class="header__primary">I'm Harith.</h1>
-    <h2 class="header__secondary">a <span class="header__pro">pro</span>grammer</h2>
-    <img class="header__img" src="images/mountain.png" alt="mountain-img">
-    <img class="header__img2" src="images/cloud.png" alt="cloud-img">
   </header>
   <main>
-    <section class="mainSection">
-      <img class="mainSection__img" src="images/harith.png" alt="">
-      <h2 class="mainSection__primary">Hello</h2>
-      <p class="mainSection__text">I'm a Web Developer. I study at ITMO University. I love 🍔 and coding.</p>
-    </section>
-    <section class="mainSection__flexContainer">
-      <section class="skills" id="skills">
-        <h2 class="skills__primary">My Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__li">Programming</li>
-          <li class="skills__li">Web Development</li>
-          <li class="skills__li">Photography</li>
-        </ul>
-      </section>
-      <section class="certs" id="certs">
-        <h2 class="certs__primary">Certifications</h2>
-        <ul class="certs__list">
-          <li class="certs__li">Comptia A+</li>
-          <li class="certs__li">Cisco CCNA</li>
-        </ul>
-      </section>
-    </section>
-    <section class="motto">
-      <h2 class="motto__primary">My Motto</h2>
-      <p class="motto__text">As <cite class="motto__cite">Martin Fowler</cite> once said — <q class="motto__quote">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</q></p>
-    </section>
+    <template id="task">
+      <li class="task tasks__task">
+        <label class="task__label">
+          <input type="checkbox" class="task__checkbox" />
+          <span class="task__checkbox-custom"></span>
+        </label>
+
+        <p class="task__text" contenteditable></p>
+
+        <button type="button" class="btn btn--red task__delete">X</button>
+      </li>
+    </template>
+
+    <div class="container">
+      <ul class="tasks"></ul>
+
+      <form class="create-task">
+        <textarea class="create-task__textarea" placeholder="Task Title ie: Finish Web Lab5"></textarea>
+        <button type="submit" class="btn btn--bg-cyan create-task__submit" disabled>Create Task</button>
+      </form>
+    </div>
   </main>
   <footer class="footer" id="contacts">
     <h2 class="footer__primary">Contact Me</h2>
@@ -62,6 +56,7 @@
       <a class="footer__button" href="https://vk.com/hhm91" target="_blank" rel="noopener noreferrer">VKontakte</a>
     </nav>
     <b class="footer__copyright">© 2021 Harith Al-Dabbagh.</b>
+    <div class="footer__loadtime"></div>
   </footer>
 </body>
 
