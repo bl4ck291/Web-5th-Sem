@@ -334,7 +334,7 @@ main {
   border-radius: 0.3rem;
 }
 
-.task__checkbox:checked + .task__checkbox-custom {
+.task__checkbox:checked+.task__checkbox-custom {
   background-color: var(--cyan);
 }
 
