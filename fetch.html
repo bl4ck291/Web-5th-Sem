@@ -9,10 +9,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@600&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="CSS/stylesheet.css">
+  <link rel="stylesheet" href="CSS/three-dots.min.css">
   <script src="scripts/loadtime.js"></script>
   <script src="scripts/activetab.js"></script>
-  <script src="scripts/localstorage.js" type="module"></script>
-  <script src="scripts/todolist.js" type="module"></script>
+  <script src="scripts/fetch.js"></script>
 </head>
 
 <body>
@@ -28,27 +28,40 @@
     </nav>
   </header>
   <main>
-    <template id="task">
-      <li class="task tasks__task">
-        <label class="task__label">
-          <input type="checkbox" class="task__checkbox" />
-          <span class="task__checkbox-custom"></span>
-        </label>
-
-        <p class="task__text" contenteditable></p>
-
-        <button type="button" class="btn btn--red task__delete">X</button>
-      </li>
+    <section class="fetch">
+      <img class="fetch__spinner" src="https://thumbs.gfycat.com/RelievedSilentArcticwolf-max-1mb.gif">
+      <section class="fetch__table table">
+        <div class="fetch__table__row">
+          <div class="table__cell table__header">
+            User ID
+          </div>
+          <div class="table__cell table__header">
+            ToDo ID
+          </div>
+          <div class="table__cell table__header">
+            Title
+          </div>
+          <div class="table__cell table__header">
+            Completed?
+          </div>
+        </div>
+      </section>
+      <p class="fetch__oops">Oops! something went wrong)</p>
+    </section>
+    <template id="fetch-row">
+      <div class="fetch__table__row">
+        <div class="table__cell table__row__userId">
+        </div>
+        <div class="table__cell table__row__todoId">
+        </div>
+        <div class="table__cell table__row__title">
+        </div>
+        <div class="table__cell table__row__completed">
+        </div>
+      </div>
     </template>
 
-    <div class="container">
-      <ul class="tasks"></ul>
 
-      <form class="create-task">
-        <textarea class="create-task__textarea" placeholder="Task Title ie: Finish Web Lab5"></textarea>
-        <button type="submit" class="btn btn--bg-cyan create-task__submit" disabled>Create Task</button>
-      </form>
-    </div>
   </main>
   <footer class="footer" id="contacts">
     <h2 class="footer__primary">Contact Me</h2>
