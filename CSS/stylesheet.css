@@ -376,7 +376,7 @@ main {
 
 /* Fetch Part */
 .fetch {
-  margin-top: 100px;
+  margin-top: 80px;
   display: grid;
 }
 
@@ -392,7 +392,15 @@ main {
 
 .fetch__table__row {
   display: grid;
-  grid-template-columns: 60px repeat(3, minmax(100px, 1fr));
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+}
+
+.fetch__table__row:nth-of-type(odd) {
+  background: #ededed;
+}
+
+.fetch__table__cell {
+  padding: 0.7rem;
 }
 
 .fetch__oops {
