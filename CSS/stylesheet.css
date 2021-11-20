@@ -85,7 +85,6 @@ body {
   position: sticky;
   z-index: 2;
   filter: drop-shadow(0 0 0.5rem white);
-  .
 }
 
 .header__img2 {
@@ -407,11 +406,25 @@ main {
   display: none;
 }
 
+/* Video Part */
+#my-video {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 2rem var(--cyan);
+}
+
 /* Responsive Part */
 @media screen and (max-width: 1920px) {
   .table {
     overflow: scroll;
     overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #my-video {
+    margin-top: 30%;
   }
 }
 
@@ -446,6 +459,10 @@ main {
     width: 60%;
     padding-left: 1%;
     padding-top: 0;
+  }
+
+  #my-video {
+    margin-top: 50%;
   }
 }
 

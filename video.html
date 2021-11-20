@@ -8,11 +8,11 @@
   <meta name="description" content="Harith Al-Dabbagh's portfolio website">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@600&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
   <link rel="stylesheet" href="CSS/stylesheet.css">
   <script src="scripts/loadtime.js"></script>
   <script src="scripts/activetab.js"></script>
   <script src="scripts/localstorage.js" type="module"></script>
-  <script src="scripts/todolist.js" type="module"></script>
 </head>
 
 <body>
@@ -29,27 +29,9 @@
     </nav>
   </header>
   <main>
-    <template id="task">
-      <li class="task tasks__task">
-        <label class="task__label">
-          <input type="checkbox" class="task__checkbox" />
-          <span class="task__checkbox-custom"></span>
-        </label>
-
-        <p class="task__text" contenteditable></p>
-
-        <button type="button" class="btn btn--red task__delete">X</button>
-      </li>
-    </template>
-
-    <div class="container">
-      <ul class="tasks"></ul>
-
-      <form class="create-task">
-        <textarea class="create-task__textarea" placeholder="Task Title ie: Finish Web Lab5"></textarea>
-        <button type="submit" class="btn btn--bg-cyan create-task__submit" disabled>Create Task</button>
-      </form>
-    </div>
+    <video id="my-video" class="video-js" controls preload="auto" data-setup="{}">
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    </video>
   </main>
   <footer class="footer" id="contacts">
     <h2 class="footer__primary">Contact Me</h2>
@@ -60,6 +42,9 @@
     <b class="footer__copyright">© 2021 Harith Al-Dabbagh.</b>
     <div class="footer__loadtime"></div>
   </footer>
+  <!-- Importing the videoJS library from a public CDN -->
+  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+  <script src="scripts/myplayer.js"></script>
 </body>
 
 </html>
