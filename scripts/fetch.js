@@ -52,6 +52,7 @@ function refresh() {
 }
 
 function deleteOldRows() {
+  document.querySelector('.fetch__table').style.display = 'none';
   document.querySelector('.fetch__table').innerHTML = "";
 }
 

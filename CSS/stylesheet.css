@@ -438,10 +438,6 @@ main {
   color: var(--cyan);
 }
 
-.vjs-matrix .vjs-big-play-button {
-  border-color: var(--cyan);
-}
-
 .vjs-matrix .vjs-volume-level,
 .vjs-matrix .vjs-play-progress,
 .vjs-matrix .vjs-slider-bar {
