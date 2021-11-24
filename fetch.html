@@ -29,25 +29,30 @@
   </header>
   <main>
     <section class="fetch">
+      <button class="fetch__button" id="btn" onclick="run()" type="button" name="button">Load</button>
       <img class="fetch__spinner" src="https://thumbs.gfycat.com/RelievedSilentArcticwolf-max-1mb.gif">
       <section class="fetch__table table">
-        <div class="fetch__table__row">
-          <div class="fetch__table__cell table__cell table__header">
-            User ID
-          </div>
-          <div class="fetch__table__cell table__cell table__header">
-            ToDo ID
-          </div>
-          <div class="fetch__table__cell table__cell table__header">
-            Title
-          </div>
-          <div class="fetch__table__cell table__cell table__header">
-            Completed?
-          </div>
-        </div>
+
+
       </section>
       <p class="fetch__oops">Oops! something went wrong &#x1F631;</p>
     </section>
+    <template id="header__template">
+      <div class="fetch__table__row">
+        <div class="fetch__table__cell table__cell table__header">
+          User ID
+        </div>
+        <div class="fetch__table__cell table__cell table__header">
+          ToDo ID
+        </div>
+        <div class="fetch__table__cell table__cell table__header">
+          Title
+        </div>
+        <div class="fetch__table__cell table__cell table__header">
+          Completed?
+        </div>
+      </div>
+    </template>
     <template id="fetch-row">
       <div class="fetch__table__row">
         <div class="fetch__table__cell table__cell table__row__userId">

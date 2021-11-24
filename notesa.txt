@@ -1,8 +1,4 @@
-lab 4
-var vs let:
-var is function scoped and let is block scoped. It can be said that a variable declared with var is defined throughout the program as compared to let.
+Lab 6 Button to reload from api without reloading the page
 
 
-compare with full url
-
-add page load time to home
+Lab 7 Add styling to the video player

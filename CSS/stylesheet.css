@@ -379,11 +379,22 @@ main {
   display: grid;
 }
 
+.fetch__button {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  background-color: white;
+  color: var(--cyan);
+  border: 0.2rem solid var(--cyan);
+}
+
 .fetch__table {
   display: none;
 }
 
 .fetch__spinner {
+  display: none;
   margin-left: auto;
   margin-right: auto;
   width: 5%;
@@ -459,6 +470,10 @@ main {
     width: 60%;
     padding-left: 1%;
     padding-top: 0;
+  }
+
+  .fetch__button {
+    margin-top: 4rem;
   }
 
   #my-video {

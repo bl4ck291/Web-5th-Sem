@@ -1,4 +1,6 @@
 function getFromAPI() {
+  const randomUserId = Math.floor(Math.random() * 10) + 1;
+  console.log(randomUserId);
   return fetch('https://jsonplaceholder.typicode.com/todos?userId=' + randomUserId)
     .then(function(response) {
       return response.json();
@@ -9,8 +11,12 @@ function getFromAPI() {
 }
 
 function appendNewRows(Data) {
+
+  const header = document.getElementById('header__template').content.cloneNode(true);
   const container = document.querySelector('.table');
   const template = document.querySelector('#fetch-row');
+  container.appendChild(header);
+
   for (let i = 0; i < Data.length; i++) {
     const clone = template.content.cloneNode(true);
     const userId = clone.querySelector('.table__row__userId');
@@ -39,9 +45,20 @@ function displayError() {
   document.querySelector('.fetch__oops').style.display = 'inherit';
 }
 
-const randomUserId = Math.floor(Math.random() * 10) + 1;
-console.log(randomUserId);
+function refresh() {
+  document.querySelector('.fetch__table').style.display = 'inherit';
+  document.querySelector('.fetch__spinner').style.display = 'inherit';
+  document.querySelector('.fetch__oops').style.display = 'none';
+}
 
-getFromAPI().then(function(data) {
-  appendNewRows(data)
-}).then(() => removeLoadingAndDisplayTable()).catch(() => displayError())
+function deleteOldRows() {
+  document.querySelector('.fetch__table').innerHTML = "";
+}
+
+function run() {
+  refresh();
+  deleteOldRows();
+  getFromAPI().then(function(data) {
+    appendNewRows(data)
+  }).then(() => removeLoadingAndDisplayTable()).catch(() => displayError())
+}
