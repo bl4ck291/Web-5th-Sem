@@ -383,10 +383,19 @@ main {
   margin-top: 2rem;
   margin-left: auto;
   margin-right: auto;
-  width: 50px;
-  background-color: white;
-  color: var(--cyan);
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cyan);
   border: 0.2rem solid var(--cyan);
+  box-shadow: 0 0 1rem var(--cyan);
+  border-radius: 5px;
+}
+
+.fetch__button:hover {
+  color: var(--cyan);
+  background-color: white;
 }
 
 .fetch__table {
